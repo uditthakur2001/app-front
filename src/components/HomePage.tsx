@@ -15,7 +15,7 @@ import FilePage from './FilePage';
 const HomePage: React.FC<{ isAdmin: boolean }> = ({ isAdmin }) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
